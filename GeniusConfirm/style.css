@@ -1,0 +1,38 @@
+* {
+    font-family: "Jersey 25", Geneva, sans-serif;
+    font-size: xx-large;
+    color: #023047;
+    line-height: 23px;
+}
+
+body {
+    background-color: #ffb703;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    position: relative;
+
+}
+
+
+button {
+    width: 100px;
+    background-color: #219ebc;
+    text-align: center;
+    padding: 15px 15px;
+    border-radius: 5px;
+    border-radius: 50%;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.no {
+    position: absolute;
+    transition: top 0.5s ease, left 0.5s ease;
+}
