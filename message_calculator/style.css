@@ -1,0 +1,93 @@
+:root {
+    --background-color: #001d3d;
+    --message-color: #fefae0;
+    --color-1: #6C6C6C;
+    --color-orange: #FF9F0A;
+    --color-number: #868686;
+    --font-color: #EFEFEF;
+    --message-font-color: #ffb703;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--background-color);
+
+}
+
+#container {
+    margin: auto;
+    margin-top: 200px;
+    width: 250px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: (50px, 1fr, 1fr, 1fr, 1fr, 1fr);
+    row-gap: 10px;
+    grid-template-areas:
+        "message message message message"
+        "tag_0 tag_1 tag_2 tag_3"
+        "num_7 num_8 num_9 tag_7"
+        "num_4 num_5 num_6 tag_11"
+        "num_1 num_2 num_3 tag_15"
+        "num_0 num_0 tag_17 tag_18";
+
+}
+
+#message {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: var(--message-color);
+    grid-area: message;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    height: 70px;
+    border-radius: 25px;
+    color: var(--message-font-color);
+    font-size: x-large;
+    padding-right: 10px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: large;
+    cursor: pointer;
+}
+
+#tag_3,
+#tag_7,
+#tag_11,
+#tag_15,
+#tag_18 {
+    background-color: var(--color-orange);
+
+}
+
+#tag_0,
+#tag_1,
+#tag_2 {
+    background-color: var(--color-1);
+
+}
+
+.number {
+    background-color: var(--color-number);
+
+}
+
+#tag_17 {
+    background-color: var(--color-number);
+}
+
+#num_0 {
+    width: 115px;
+    border-radius: 25px;
+}
