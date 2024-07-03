@@ -11,8 +11,6 @@ This unique calculator, called the "Message Display Calculator," is designed to 
 ## How to Run
 To experience this playful project:
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/message-display-calculator.git
 2.	Open the index.html file in any modern web browser.   
 
 ## Technologies Used
